@@ -11,6 +11,8 @@ import (
 	"main/models"
 )
 
+// BasketHandler handles all the requests are made with containing "/baskets/" as an URL path.
+// Allowed HTTP methods are GET, POST, PUT, DELETE.
 func BasketHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	switch r.Method {

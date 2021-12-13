@@ -11,6 +11,8 @@ import (
 	"main/models"
 )
 
+// CustomerHandler handles all the requests are made with containing "/customers/" as an URL path.
+// Allowed HTTP methods are GET, POST, PUT, DELETE.
 func CustomerHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	switch r.Method {
