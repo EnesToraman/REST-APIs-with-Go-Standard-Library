@@ -2,6 +2,7 @@ package main
 
 import (
 	"net/http"
+	"os"
 
 	"main/handlers"
 )
@@ -15,6 +16,6 @@ func main() {
 	http.HandleFunc("/brands/", handlers.BrandHandler)
 	http.HandleFunc("/baskets/", handlers.BasketHandler)
 
-	err := http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 	handlers.CheckError(err)
 }
