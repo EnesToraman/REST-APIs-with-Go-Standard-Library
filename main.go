@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+	http.Handle("/", http.FileServer(http.Dir("./static")))
 	http.HandleFunc("/users/", handlers.UserHandler)
 	http.HandleFunc("/products/", handlers.ProductHandler)
 	http.HandleFunc("/payments/", handlers.PaymentHandler)
