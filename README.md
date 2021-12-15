@@ -16,11 +16,11 @@ Project is deployed to Heroku. Accessible via URL below:
 
 1) /users/ -> id, email, username, isActive
 2) /products/ -> sku, name, price, stock
-3) /payments/ -> userId, amount, discount, tax
+3) /payments/ -> userID, amount, discount, tax
 4) /brands/ -> id, name, productQty, totalWorth
 5) /categories/ -> id, name, productQty, isMain
 6) /customers/ -> id, userID, purchaseAmount, OrderQty
-7) /baskets/ -> userId, productId, sku, quantity
+7) /baskets/ -> userID, productID, sku, quantity
 
 #### Example - endpoints with query parameters
 
