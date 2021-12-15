@@ -1,5 +1,6 @@
 # REST API design with Go Standard Library
 Project is deployed to Heroku. Accessible via URL below:
+
 [go-task-v1.herokuapp.com](https://go-task-v1.herokuapp.com/)
 ## Endpoints
 
@@ -7,7 +8,7 @@ Project is deployed to Heroku. Accessible via URL below:
 - /products/
 - /payments/
 - /brands/
-- /categorires/
+- /categories/
 - /customers/
 - /baskets/
 
